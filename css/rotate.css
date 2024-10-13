@@ -1,0 +1,12 @@
+.spin-image {
+            animation: spin 2.5s infinite linear; /* Apply spin animation */
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg); /* Start rotation */
+            }
+            to {
+                transform: rotate(360deg); /* Complete rotation */
+            }
+        }
