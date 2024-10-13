@@ -1,0 +1,450 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #00000052 url('https://static.vecteezy.com/system/resources/thumbnails/014/378/559/small_2x/dark-black-and-gray-blurred-gradient-background-has-a-little-abstract-light-soft-background-for-wallpaper-design-graphic-and-presentation-backdrop-wall-free-photo.jpg') no-repeat center center fixed; /* Add the background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: white; /* Ensure text color is white for contrast */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #f27dfd #00000052; /* For Firefox, custom scrollbar colors */
+}
+
+body::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+	border-radius: 25px; 
+}
+
+.shocking-pink-icon {
+    color: #ff0066; /* Shocking pink */
+}
+
+.fa-user-friends {
+  color: white; /* Shocking pink color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.fa-user-friends:hover {
+  color: #ff0066; /* Change to white on hover */
+}
+
+body::-webkit-scrollbar-track {
+    background: #00000052; /* Solid black track background */
+	border-radius: 25px; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #039fed; /* Shocking blue scrollbar thumb */
+    border-radius: 25px; /* Rounded scrollbar thumb */
+}
+
+.navbar {
+	position: sticky;
+  top: 0;
+  overflow: hidden;
+    background: transparent; /* Solid black */
+    color: white;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .button {
+    background: #00000052; /* Solid black */
+    color: white;
+    border: 2px solid #039fed; /* Shocking blue border for buttons */
+    padding: 8px 16px;
+    cursor:url(images/mouse.png),default;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 12px; /* Rounded corners for buttons */
+}
+
+.navbar .button:hover {
+    background: #00000052; /* No change on hover */
+    color: #039fed; /* Shocking blue text on hover */
+}
+
+.navbar input {
+   padding: 8px;
+    border: 2px solid transparent; /* Transparent border */
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3); /* Slightly transparent black */
+    color: white; /* White text color */
+    border-radius: 25px; /* Rounded corners for inputs */
+    background: linear-gradient(black, black) padding-box, /* Background for gradient border */
+                linear-gradient(to right, #29abe2, #ff00ff) border-box; /* Gradient border */
+
+}
+
+.input-container {
+    position: relative; /* Position container relative to its normal position */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center items */
+}
+
+.input-container .input-icon {
+    position: absolute; /* Position icon absolutely within the container */
+    left: 10px; /* Adjust as needed */
+    font-size: 16px; /* Adjust size as needed */
+    color: #f27dfd; /* Icon color */
+	text-align: right;
+}
+.input-container input {
+    padding: 9px 8px 8px 35px; /* Adjust padding to make room for the icon and add space */
+  color:white;
+  text-align: right;
+}
+.input-container input::placeholder {
+    color: white; /* Placeholder text color */
+}
+
+#player-name, #game-path, #search-box{
+color:white;
+}
+
+
+#server-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#server-table th, #server-table td {
+    padding: 10px;
+    text-align: left;
+    background: rgba(52,53,53, 0.6); /* Solid black for table cells */
+    color: white; /* White text */
+}
+
+#server-table th {
+    background-color: #00000052; /* Solid black */
+    color: #039fed; /* Shocking blue text */
+    cursor:url(images/mouse.png),default;
+}
+
+#server-table tbody tr:hover {
+    background-color: #00000052; /* Solid black on hover */
+}
+
+.server-row {
+    background-color: rgba(255, 255, 255, 0.3); /* Solid black */
+    border: 1px solid #039fed; /* Shocking blue border for server rows */
+    border-radius: 12px; /* Rounded corners for server rows */
+}
+
+tbody, td, tfoot, th, thead, tr {
+  border-color: #039fed;
+  border-style: solid;
+  border-width: 0;
+  border-bottom: 2px solid #039fed;
+}
+
+.server-row .icon {
+    width: 31px;
+    height: 31px;
+}
+
+.btn-primary {
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, #29abe2, #ff00ff) border-box;
+  border: 2px solid transparent;
+  color:#f27dfd;
+  border-radius:25px;
+}
+
+.btn-primary:hover {
+  linear-gradient(black, black) padding-box, linear-gradient(to right, #29abe2, #ff00ff) border-box;
+   border: 2px solid transparent;
+   color:#f27dfd;
+   border-radius:25px;
+}
+
+.launch-btn {
+    background: #343535; /* Solid black */
+    color: #039fed;
+    border: 2px solid #f27dfd; /* Shocking blue border for launch buttons */  
+   cursor:url(images/mouse.png),default;
+    font-size: 10px;
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 100px; /* Rounded corners for buttons */
+	 width: 30px;
+    height: 30px;
+}
+
+.launch-btn:hover {
+    background: #343535; /* No change on hover */
+    color: #039fed; /* Shocking blue text on hover */
+}
+
+input[readonly] {
+    background: #000000; /* Solid black */
+    color: #6c757d; /* Darker text color for readonly inputs */
+    cursor:url(images/mouse.png),default;
+	 padding: 8px 8px 8px 30px;
+    border: 2px solid transparent; /* Transparent border */
+    font-size: 14px;
+    color: white; /* White text color */
+    border-radius: 25px; /* Rounded corners for inputs */
+    background: linear-gradient(black, black) padding-box, /* Background for gradient border */
+                linear-gradient(to right, #29abe2, #ff00ff) border-box; /* Gradient border */
+				text-align: right;
+}
+
+ input[placeholder] {
+	  text-align: center;
+            color: white; /* Shocking pink color */
+            opacity: 1; /* Ensure full opacity */
+        }
+
+.spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #00000052; /* Solid black border */
+    border-radius: 50%;
+    border-top: 5px solid #039fed; /* Shocking blue top for spinner */
+    animation: spin 1s linear infinite;
+    display: none; /* Hide the spinner by default */
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#scrollTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Make sure it's on top */
+    background-color: #343535; /* Solid black background */
+    color: #039fed;
+     border: 2px solid #f27dfd; /* Shocking blue border for launch buttons */
+    padding: 10px 15px;
+   cursor:url(images/mouse.png),default;
+    border-radius: 100px; /* Rounded corners for button */
+}
+
+#scrollTopBtn:hover {
+    background-color: #343535; /* No change on hover */
+     border: 2px solid #f27dfd; /* Shocking blue border for launch buttons */
+}
+
+.highlight {
+    background-color: #039fed; /* Shocking blue highlight */
+    color: black;
+}
+
+span {
+    color: #f27dfd; /* Shocking blue color */
+    font-weight: bold;
+}
+
+span:hover {
+    color: white; /* White color on hover */
+    font-weight: bold;
+}
+
+/* Custom cursor */
+html, body {
+    cursor:url(images/mouse.png),default;
+}
+
+/* Dialog styles */
+dialog {
+	width: 400px;
+    border: none;
+    padding: 20px;
+    background: #00000052; /* Solid black */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    border-radius: 12px; /* Rounded corners */
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #039fed; /* Shocking blue border around the form */
+    padding: 20px;
+    background: #00000052; /* Solid black background for the form */
+}
+
+dialog label {
+    color: white; /* Text color for labels */
+    margin-bottom: 10px;
+}
+
+dialog input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #039fed; /* Shocking blue border for inputs */
+    background: #000000; /* Solid black background for inputs */
+    color: white; /* Text color for inputs */
+    border-radius: 12px; /* Rounded corners for inputs */
+}
+
+dialog button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid #039fed; /* Shocking blue border for buttons */
+    background: #00000052; /* Solid black background */
+    color: white; /* Button text color */
+   cursor:url(images/mouse.png),default;
+    border-radius: 12px; /* Rounded corners for buttons */
+    transition: background 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+dialog button:hover {
+    background: #039fed; /* Button background color on hover */
+    color: white; /* Button text color on hover */
+}
+
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+    border-bottom: 2px solid #039fed;
+	margin-top: -45px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+  cursor:url(images/mouse.png),default;
+}
+
+.topnav a.active {
+  background-color: transparent;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+/* Styles for the players modal */
+#w3-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* Ensure modal is on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide scrollbars */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.w3-modal-content {
+    background: #000000; /* Solid black background */
+    margin-right: 10%; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #039fed; /* Shocking blue border */
+    border-radius: 12px; /* Rounded corners */
+    width: 80%; /* Responsive width */
+    max-width: 200px; /* Maximum width */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+	overflow: hidden; /* Hide scrollbars */
+}
+
+.w3-container {
+    padding: 10px;
+	 overflow: hidden; /* Hide scrollbars */
+}
+
+.w3-button {
+    background: black;
+    border: none;
+    color: #f27dfd; /* Shocking pink */
+    font-size: 24px;
+    cursor:url(images/mouse.png),default;
+	border-radius:10px;
+}
+
+.w3-button:hover {
+    color: #f27dfd !important; /* Change color on hover */
+	border-radius:10px;
+	background: black !important;
+}
+
+.w3-card-4 {
+    background: #000000; /* Solid black background */
+    border-radius: 12px; /* Rounded corners */
+    border: 1px solid #039fed; /* Shocking blue border */
+}
+
+header.w3-container h2 {
+    margin: 0;
+    color: #ffffff; /* White color for the title */
+}
+
+#w3-modal .w3-blue {
+    background: #000000; /* Solid black background */
+}
+
+#w3-modal #players-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#w3-modal #players-table th, #w3-modal #players-table td {
+    padding: 10px;
+    text-align: left;
+    background: rgba(52, 53, 53, 0.6); /* Slightly transparent black */
+    color: white; /* White text color */
+    border-bottom: 2px solid #039fed; /* Shocking blue border */
+}
+
+#w3-modal #players-table th {
+    background-color: #000000; /* Solid black */
+    color: #039fed; /* Shocking blue text */
+    cursor:url(images/mouse.png),default;
+}
+
+#w3-modal #players-table tbody tr:hover {
+    background-color: #000000; /* Solid black on hover */
+}
+
+#w3-modal #players-table tbody tr {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    border: 1px solid #039fed; /* Shocking blue border */
+    border-radius: 12px; /* Rounded corners */
+}
+
